@@ -1,0 +1,124 @@
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -6px;
+    height: 60px;
+    background-color: #FBFDFF;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .router-link-active{
+        text-decoration: none;
+        color: #000;
+    }
+    .router-link-active:hover{
+        color: #0060fa;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 60px;
+        background-color: #FBFDFF;
+        border: none;
+        cursor: pointer;  
+        font-size: 14px;
+    }
+    button:hover{
+        color: #0060fa;
+    }
+    .but{
+        display: flex;
+        background-color: #0052D9;
+        color: white;
+    }
+    .but:hover{
+        color: white;
+        background-color: #0060fa;
+    }
+    img {    
+        width: 40px; /* 定义头像宽度 */
+        height: 40px; /* 定义头像高度 */
+        border-radius: 50%; /* 使头像成为圆形 */
+        margin: 10px 3px; /* 给头像添加外边距 */
+    } 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.home{
+    display: flex;
+}
+input{
+    flex-grow: 1;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    font-size: 13px;
+    margin-top: 5px;
+    height: 40px;
+    outline: none;
+    &:focus{
+        border-color: #327bf1;
+    }
+} 
+.messageList{
+    display:none;
+    list-style: none;
+    margin-left: 90%; 
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 5px;  
+    background-color: #F7F7F7;
+    z-index: 1000; 
+    li{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: -29px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 129px;
+    }
+    button{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 30px;
+        border: none;
+        cursor: pointer; 
+        width: 129px;
+        background-color: #F7F7F7;
+        img{
+            width: 50px;
+            height: 20px;
+            margin-left: 13px;
+        }
+    }
+}
+.tag-box{
+    display: flex;
+    padding: 20px;
+    background-color: #FAFAFA;
+    width: 1600px;
+}
+.tab-view{
+    cursor: pointer; 
+    border: none;
+    background-color: #FAFAFA;
+    font-size: 16px;
+}
+.tab-view:hover{
+    color: #FB5B39;
+}
+.view-text-box:hover{
+    color: #000;
+}

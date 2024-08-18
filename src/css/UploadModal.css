@@ -1,0 +1,194 @@
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #606266;
+    font-size: 13px;
+}
+
+.radio-input {
+    display: none;
+    /* 隐藏默认单选按钮 */
+}
+
+.radio-input+label {
+    position: relative;
+    padding-left: 30px;
+    /* 留出空间用于自定义图标 */
+    cursor: pointer;
+}
+
+/* 自定义单选按钮的样式 */
+.radio-input+label:before {
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    /* 默认边框颜色 */
+    border-radius: 50%;
+    /* 圆形 */
+    background-color: white;
+    /* 默认背景色 */
+    transform: translateY(-50%);
+}
+
+/* 选中状态时的样式 */
+.radio-input:checked+label:before {
+    border-color: #007bff;
+    /* 自定义选中边框颜色 */
+    background-color: #007bff;
+    /* 自定义选中背景颜色 */
+}
+
+.radio-input:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 27%;
+    /* 调整内圈的位置 */
+    top: 49%;
+    width: 5px;
+    /* 内圈的大小 */
+    height: 5px;
+    /* 内圈的大小 */
+    border-radius: 50%;
+    background-color: #fff;
+    /* 内圈透明 */
+    transform: translateY(-50%);
+}
+
+textarea {
+    margin-left: 10px;
+    width: 480px;
+    height: 60px;
+    outline: none;
+
+    &:focus {
+        border-color: #327bf1;
+    }
+}
+
+.copy-button {  
+    display: flex;
+    margin-left: auto; /* 将按钮推到最右边 */
+    background-color: #FAFAFA; /* 按钮颜色 */  
+    color: #919090; /* 字体颜色 */  
+    border: none; /* 无边框 */  
+    padding: 0px 0px; /* 内边距 */  
+    cursor: pointer; /* 鼠标指针样式 */ 
+    margin-top: -28px; 
+  }  
+
+.copy {
+    padding: 0 10px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.file-box {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F6F7;
+}
+
+.file {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.submit {
+    padding: 20px 20px;
+    background-color: #FC5531;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* 自定义样式示例 */
+.token.keyword {
+    color: #0033B3;
+    /* 关键字颜色 */
+}
+
+.token.comment {
+    color: #067C16;
+    /* 注释颜色 */
+}
+
+.token.string {
+    color: #067C16;
+    /* 绿色 */
+}
+
+/* 函数名 */
+.token.function {
+    color: #5A7F84;
+    /* 橙色 */
+}
+
+/* 变量名 */
+.token.variable {
+    color: #000;
+    /* 紫色 */
+}
+
+/* 数字 */
+.token.number {
+    color: #2370E4;
+    /* 黄色 */
+}
+
+/* HTML 标签 */
+.token.tag {
+    color: #800000;
+    /* 标签颜色 */
+}
+
+/* 属性名 */
+.token.attr-name {
+    color: #E50000;
+    /* 属性名颜色 */
+}
+
+/* 属性值 */
+.token.attr-value {
+    color: #0000FF;
+    /* 属性值颜色 */
+}
+
+/* CSS 类名 */
+.token.selector {
+    color: #880000;
+    /* CSS 选择器颜色 */
+}
+
+code {
+    font-family: 'Consolas', 'Courier New', 'Roboto Mono', Courier, monospace;
+}
+
+.formatted-code {
+    display: flex;
+    justify-content: space-between;
+    /* 在水平线上均匀分布 */
+    align-items: flex-start;
+    /* 与第一行代码对齐   */
+    overflow-x: auto;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #fff;
+}
